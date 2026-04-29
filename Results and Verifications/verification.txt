@@ -1,0 +1,124 @@
+Verification Report — all algorithms should agree on maxSum
+============================================================
+
+n=100  type=random
+  Brute Force (All Subarrays)    maxSum=3459
+  Better Brute Force             maxSum=3459
+  Prefix Sum                     maxSum=3459
+  Divide & Conquer               maxSum=3459
+  Kadane's Algorithm             maxSum=3459
+  Result: AGREE
+
+n=100  type=negative
+  Brute Force (All Subarrays)    maxSum=-10
+  Better Brute Force             maxSum=-10
+  Prefix Sum                     maxSum=-10
+  Divide & Conquer               maxSum=-10
+  Kadane's Algorithm             maxSum=-10
+  Result: AGREE
+
+n=100  type=positive
+  Brute Force (All Subarrays)    maxSum=49225
+  Better Brute Force             maxSum=49225
+  Prefix Sum                     maxSum=49225
+  Divide & Conquer               maxSum=49225
+  Kadane's Algorithm             maxSum=49225
+  Result: AGREE
+
+n=500  type=random
+  Brute Force (All Subarrays)    maxSum=18866
+  Better Brute Force             maxSum=18866
+  Prefix Sum                     maxSum=18866
+  Divide & Conquer               maxSum=18866
+  Kadane's Algorithm             maxSum=18866
+  Result: AGREE
+
+n=500  type=negative
+  Brute Force (All Subarrays)    maxSum=-1
+  Better Brute Force             maxSum=-1
+  Prefix Sum                     maxSum=-1
+  Divide & Conquer               maxSum=-1
+  Kadane's Algorithm             maxSum=-1
+  Result: AGREE
+
+n=500  type=positive
+  Brute Force (All Subarrays)    maxSum=247638
+  Better Brute Force             maxSum=247638
+  Prefix Sum                     maxSum=247638
+  Divide & Conquer               maxSum=247638
+  Kadane's Algorithm             maxSum=247638
+  Result: AGREE
+
+n=1000  type=random
+  Brute Force (All Subarrays)    maxSum=19485
+  Better Brute Force             maxSum=19485
+  Prefix Sum                     maxSum=19485
+  Divide & Conquer               maxSum=19485
+  Kadane's Algorithm             maxSum=19485
+  Result: AGREE
+
+n=1000  type=negative
+  Brute Force (All Subarrays)    maxSum=-1
+  Better Brute Force             maxSum=-1
+  Prefix Sum                     maxSum=-1
+  Divide & Conquer               maxSum=-1
+  Kadane's Algorithm             maxSum=-1
+  Result: AGREE
+
+n=1000  type=positive
+  Brute Force (All Subarrays)    maxSum=506661
+  Better Brute Force             maxSum=506661
+  Prefix Sum                     maxSum=506661
+  Divide & Conquer               maxSum=506661
+  Kadane's Algorithm             maxSum=506661
+  Result: AGREE
+
+n=2000  type=random
+  Brute Force (All Subarrays)    maxSum=28635
+  Better Brute Force             maxSum=28635
+  Prefix Sum                     maxSum=28635
+  Divide & Conquer               maxSum=28635
+  Kadane's Algorithm             maxSum=28635
+  Result: AGREE
+
+n=2000  type=negative
+  Brute Force (All Subarrays)    maxSum=-1
+  Better Brute Force             maxSum=-1
+  Prefix Sum                     maxSum=-1
+  Divide & Conquer               maxSum=-1
+  Kadane's Algorithm             maxSum=-1
+  Result: AGREE
+
+n=2000  type=positive
+  Brute Force (All Subarrays)    maxSum=1004029
+  Better Brute Force             maxSum=1004029
+  Prefix Sum                     maxSum=1004029
+  Divide & Conquer               maxSum=1004029
+  Kadane's Algorithm             maxSum=1004029
+  Result: AGREE
+
+n=3000  type=random
+  Brute Force (All Subarrays)    maxSum=36034
+  Better Brute Force             maxSum=36034
+  Prefix Sum                     maxSum=36034
+  Divide & Conquer               maxSum=36034
+  Kadane's Algorithm             maxSum=36034
+  Result: AGREE
+
+n=3000  type=negative
+  Brute Force (All Subarrays)    maxSum=-1
+  Better Brute Force             maxSum=-1
+  Prefix Sum                     maxSum=-1
+  Divide & Conquer               maxSum=-1
+  Kadane's Algorithm             maxSum=-1
+  Result: AGREE
+
+n=3000  type=positive
+  Brute Force (All Subarrays)    maxSum=1499396
+  Better Brute Force             maxSum=1499396
+  Prefix Sum                     maxSum=1499396
+  Divide & Conquer               maxSum=1499396
+  Kadane's Algorithm             maxSum=1499396
+  Result: AGREE
+
+ALL ALGORITHMS AGREE

@@ -1,0 +1,76 @@
+algorithm,complexity,n,dataset_type,time_ms,max_sum,start_idx,end_idx
+Brute Force (All Subarrays),O(n^3),100,random,0.749200,3459,66,70
+Better Brute Force,O(n^2),100,random,0.042200,3459,66,70
+Prefix Sum,O(n^2),100,random,0.049400,3459,66,70
+Divide & Conquer,O(nlogn),100,random,0.029500,3459,66,70
+Kadane's Algorithm,O(n),100,random,0.003200,3459,66,70
+Brute Force (All Subarrays),O(n^3),100,negative,0.788400,-10,16,16
+Better Brute Force,O(n^2),100,negative,0.041200,-10,16,16
+Prefix Sum,O(n^2),100,negative,0.351900,-10,16,16
+Divide & Conquer,O(nlogn),100,negative,0.010700,-10,16,16
+Kadane's Algorithm,O(n),100,negative,0.003100,-10,16,16
+Brute Force (All Subarrays),O(n^3),100,positive,0.779900,49225,0,99
+Better Brute Force,O(n^2),100,positive,0.046700,49225,0,99
+Prefix Sum,O(n^2),100,positive,0.101200,49225,0,99
+Divide & Conquer,O(nlogn),100,positive,0.009100,49225,0,99
+Kadane's Algorithm,O(n),100,positive,0.003200,49225,0,99
+Brute Force (All Subarrays),O(n^3),500,random,86.421900,18866,351,498
+Better Brute Force,O(n^2),500,random,1.126100,18866,351,498
+Prefix Sum,O(n^2),500,random,0.867600,18866,351,498
+Divide & Conquer,O(nlogn),500,random,0.059900,18866,351,498
+Kadane's Algorithm,O(n),500,random,0.011100,18866,351,498
+Brute Force (All Subarrays),O(n^3),500,negative,102.106700,-1,307,307
+Better Brute Force,O(n^2),500,negative,1.114700,-1,307,307
+Prefix Sum,O(n^2),500,negative,1.144100,-1,307,307
+Divide & Conquer,O(nlogn),500,negative,0.082300,-1,307,307
+Kadane's Algorithm,O(n),500,negative,0.201200,-1,307,307
+Brute Force (All Subarrays),O(n^3),500,positive,97.729200,247638,0,499
+Better Brute Force,O(n^2),500,positive,1.068000,247638,0,499
+Prefix Sum,O(n^2),500,positive,1.275700,247638,0,499
+Divide & Conquer,O(nlogn),500,positive,0.048300,247638,0,499
+Kadane's Algorithm,O(n),500,positive,0.010800,247638,0,499
+Brute Force (All Subarrays),O(n^3),1000,random,627.282800,19485,351,976
+Better Brute Force,O(n^2),1000,random,3.782800,19485,351,976
+Prefix Sum,O(n^2),1000,random,3.271300,19485,351,976
+Divide & Conquer,O(nlogn),1000,random,0.118800,19485,351,976
+Kadane's Algorithm,O(n),1000,random,0.017100,19485,351,976
+Brute Force (All Subarrays),O(n^3),1000,negative,556.338900,-1,307,307
+Better Brute Force,O(n^2),1000,negative,2.602200,-1,307,307
+Prefix Sum,O(n^2),1000,negative,3.077800,-1,307,307
+Divide & Conquer,O(nlogn),1000,negative,0.072400,-1,307,307
+Kadane's Algorithm,O(n),1000,negative,0.014400,-1,307,307
+Brute Force (All Subarrays),O(n^3),1000,positive,553.470300,506661,0,999
+Better Brute Force,O(n^2),1000,positive,2.705200,506661,0,999
+Prefix Sum,O(n^2),1000,positive,2.492900,506661,0,999
+Divide & Conquer,O(nlogn),1000,positive,0.086300,506661,0,999
+Kadane's Algorithm,O(n),1000,positive,0.014300,506661,0,999
+Brute Force (All Subarrays),O(n^3),2000,random,3644.745800,28635,351,1157
+Better Brute Force,O(n^2),2000,random,10.836000,28635,351,1157
+Prefix Sum,O(n^2),2000,random,12.910600,28635,351,1157
+Divide & Conquer,O(nlogn),2000,random,0.225900,28635,351,1157
+Kadane's Algorithm,O(n),2000,random,0.025400,28635,351,1157
+Brute Force (All Subarrays),O(n^3),2000,negative,2915.530000,-1,307,307
+Better Brute Force,O(n^2),2000,negative,8.890700,-1,307,307
+Prefix Sum,O(n^2),2000,negative,10.491000,-1,307,307
+Divide & Conquer,O(nlogn),2000,negative,0.110800,-1,307,307
+Kadane's Algorithm,O(n),2000,negative,0.016200,-1,307,307
+Brute Force (All Subarrays),O(n^3),2000,positive,2478.193000,1004029,0,1999
+Better Brute Force,O(n^2),2000,positive,7.804000,1004029,0,1999
+Prefix Sum,O(n^2),2000,positive,8.281300,1004029,0,1999
+Divide & Conquer,O(nlogn),2000,positive,0.245300,1004029,0,1999
+Kadane's Algorithm,O(n),2000,positive,0.021100,1004029,0,1999
+Brute Force (All Subarrays),O(n^3),3000,random,13766.618900,36034,351,2960
+Better Brute Force,O(n^2),3000,random,31.755000,36034,351,2960
+Prefix Sum,O(n^2),3000,random,30.728500,36034,351,2960
+Divide & Conquer,O(nlogn),3000,random,0.470000,36034,351,2960
+Kadane's Algorithm,O(n),3000,random,0.025400,36034,351,2960
+Brute Force (All Subarrays),O(n^3),3000,negative,15539.762900,-1,307,307
+Better Brute Force,O(n^2),3000,negative,30.088800,-1,307,307
+Prefix Sum,O(n^2),3000,negative,26.211200,-1,307,307
+Divide & Conquer,O(nlogn),3000,negative,0.296500,-1,307,307
+Kadane's Algorithm,O(n),3000,negative,0.068400,-1,307,307
+Brute Force (All Subarrays),O(n^3),3000,positive,14440.859100,1499396,0,2999
+Better Brute Force,O(n^2),3000,positive,19.263600,1499396,0,2999
+Prefix Sum,O(n^2),3000,positive,15.852900,1499396,0,2999
+Divide & Conquer,O(nlogn),3000,positive,0.186800,1499396,0,2999
+Kadane's Algorithm,O(n),3000,positive,0.029000,1499396,0,2999
