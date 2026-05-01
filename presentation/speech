@@ -1,0 +1,68 @@
+
+**Slide 1 — Title**
+Introduce the project. Say you're comparing five algorithms that all solve the same problem — Maximum Subarray Sum — but with wildly different efficiencies. The goal is to see how algorithmic design choices translate into real, measurable performance differences.
+
+---
+
+**Slide 2 — The Problem**
+Explain what the problem is asking: given an array that can have both positive and negative numbers, find the contiguous subarray with the largest possible sum. Walk through the example — point out that the answer isn't the whole array, it's specifically [4, -1, 2, 1] which gives sum = 6. Then briefly mention why this matters in the real world — stock profit windows, signal peaks, DNA scoring, image region detection.
+
+---
+
+**Slide 3 — Algorithms at a Glance**
+Give a quick overview of all five algorithms before diving into any one of them. Point out that each one represents a different design paradigm — exhaustive search, precomputation, divide & conquer, and dynamic programming. Note that complexity ranges from O(n³) all the way down to O(n), and highlight the Kadane row as the theoretically optimal solution.
+
+---
+
+**Slide 4 — Pseudocode Part I**
+Walk through each of the four pseudocodes briefly. For Brute Force — three nested loops, check every possible subarray. For Better Brute Force — eliminate the innermost loop by accumulating the sum as you go. For Prefix Sum — precompute cumulative sums so any subarray sum is just a subtraction, but you still need two loops to check all pairs. For Kadane — the key insight is the decision at each element: is it better to extend the current subarray or start fresh? That single decision makes it O(n).
+
+---
+
+**Slide 5 — Pseudocode: Divide & Conquer**
+Explain the three-step structure. Divide: split the array at the midpoint. Conquer: recursively find the max subarray in the left half and right half. Combine: find the max subarray that crosses the midpoint — this is done by expanding outward from the middle in both directions. The final answer is the best of those three. The recurrence T(n) = 2T(n/2) + O(n) resolves to O(n log n) by the Master Theorem.
+
+---
+
+**Slide 6 — Theoretical Analysis**
+Show how dramatically the operation counts diverge as n grows. At n=1,000, Brute Force needs a billion operations while Kadane needs just 1,000. The line chart makes this visual — the curves fan out quickly. Emphasize that this isn't just a constant-factor difference, it's a fundamentally different growth rate.
+
+---
+
+**Slide 7 — Empirical Results (Log-Log Plot)**
+This is the key evidence slide. Explain that a log-log plot turns exponential curves into straight lines — the slope of each line equals the exponent in the complexity. Point out that Brute Force has a steep slope around 3, the quadratic algorithms have slope ~2, D&C is between 1 and 2, and Kadane is nearly flat. The fact that the slopes match the theory is the main finding — your implementations are correct and behave as expected.
+
+---
+
+**Slide 8 — Speedup Chart**
+Put the performance gap in concrete terms. At n=3,000, Kadane is roughly half a million times faster than Brute Force. Even D&C is about 27,000 times faster. The speedup keeps growing as n increases because the gap between complexity classes widens. This slide drives home why algorithm choice matters far more than hardware or micro-optimizations.
+
+---
+
+**Slide 9 — Runtime at n=3000**
+Give the actual measured numbers. Brute Force took over 13 seconds. Kadane took 0.025 milliseconds. Reference the bar chart and note that on a log scale, Brute Force's bars dwarf everything else — Better BF and Prefix Sum are visually close to each other, and D&C and Kadane are nearly invisible at the bottom. Also note that all algorithms got the same correct answer across all datasets.
+
+---
+
+**Slide 10 — Heatmap**
+This slide shows the same data from a different angle. The entire color scale is dominated by Brute Force — everything else is so fast it barely registers. It's a good visual summary of just how extreme the performance difference is. The heatmap also makes it easy to see how each algorithm scales with input size down the rows.
+
+---
+
+**Slide 11 — Dataset Sensitivity (Kadane Anomaly)**
+Point out something interesting in the data — Kadane's algorithm showed a spike at n=500 on the all-negative dataset. For an O(n) algorithm this is unusual. The likely explanation is branch misprediction: when all values are negative, the algorithm constantly resets the current sum, which disrupts the CPU's branch predictor. It's a real-world hardware effect. The key takeaway is that even though it's an anomaly, it doesn't change the complexity class — it's still O(n), just with a slightly larger constant in that case.
+
+---
+
+**Slide 12 — Theory vs. Empirical**
+This is your validation slide. For each algorithm, you derived a theoretical complexity, implemented it, ran benchmarks, and fitted an empirical curve to the results. All five match. The log-log slopes align with the predicted exponents. This confirms both that your analysis was correct and that your implementations are faithful to the algorithms — no accidental optimizations or bugs inflating or deflating the results.
+
+---
+
+**Slide 13 — Strengths & Weaknesses**
+Don't just say Kadane wins everything — explain the tradeoffs. Brute Force is the easiest to implement and easiest to verify by hand, which has value when correctness is the only concern. Prefix Sum introduces the idea of precomputation which is powerful and extends to 2D. D&C is parallelizable and works well in distributed settings. Kadane is optimal for 1D but needs modification for 2D problems. Every algorithm has a context where it makes sense.
+
+---
+
+**Slide 14 — Conclusion**
+Wrap up with the four main takeaways. Theory matched practice — the log-log slopes confirmed every complexity class. Kadane dominated by every metric. The paradigm you choose matters enormously — each design approach produced a measurably different result. And even a linear-time algorithm can show minor sensitivity to input type due to hardware-level effects. End by saying this project demonstrated that understanding algorithm design isn't just academic — it directly determines whether a program runs in milliseconds or hours.
